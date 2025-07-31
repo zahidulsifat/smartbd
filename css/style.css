@@ -210,7 +210,7 @@ section.contact-us {
 }
 
 .banner-text h1 {
-    font-size: clamp(1.5rem, 8vw, 3.5rem);
+    font-size: clamp(1.25rem, 6vw, 2.5rem);
     font-weight: 800;
     margin-bottom: var(--space-6);
     color: var(--text-primary);
@@ -218,7 +218,7 @@ section.contact-us {
 }
 
 .banner-text p {
-    font-size: clamp(0.875rem, 4vw, 1.25rem);
+    font-size: clamp(0.75rem, 3vw, 1.125rem);
     color: var(--text-tertiary);
     max-width: 800px;
     margin: 0 auto;
@@ -650,7 +650,7 @@ nav {
     background: var(--footer-bg);
     color: white;
     padding: clamp(3.5rem, 8vw, 5rem) 0 clamp(1.5rem, 4vw, 2rem) 0;
-    margin: 0 clamp(-10px, -3vw, -20px) clamp(-10px, -3vw, -20px) clamp(-10px, -3vw, -20px);
+    margin: 0 auto clamp(-10px, -3vw, -20px);
     padding-left: clamp(10px, 3vw, 20px);
     padding-right: clamp(10px, 3vw, 20px);
     transition: background-color var(--transition);
