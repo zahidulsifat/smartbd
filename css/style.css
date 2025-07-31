@@ -131,7 +131,7 @@ body {
     color: var(--text-primary);
     background-color: var(--bg-secondary);
     overflow-x: hidden;
-    margin: clamp(10px, 3vw, 20px);
+    margin: clamp(10px, 3vw, 20px) clamp(10px, 3vw, 20px) 0 clamp(10px, 3vw, 20px);
     transition: background-color var(--transition), color var(--transition);
 }
 
@@ -648,10 +648,7 @@ nav {
 .footer {
     background: var(--footer-bg);
     color: white;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: clamp(1.5rem, 4vw, 2.5rem) 0;
     margin: 0;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
