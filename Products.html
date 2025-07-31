@@ -6,7 +6,11 @@
     <title>Products & Services - Smart Technologies (BD) Ltd</title>
     <meta name="description" content="Explore our comprehensive range of technology products and services including hardware solutions, cloud services, and managed IT services.">
     <link rel="icon" type="image/png" href="images/fav.png">
-    
+    <link rel="apple-touch-icon" href="images/fav.png">
+    <link rel="canonical" href="https://smarttechnologiesbd.com/Products.html">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#667eea">
+
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -249,21 +253,7 @@
             }
         }
 
-        // Navigation scroll effect
-        const navbar = document.getElementById('navbar');
-        let lastScrollTop = 0;
 
-        window.addEventListener('scroll', () => {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            
-            if (scrollTop > 100) {
-                navbar.classList.add('nav-scrolled');
-            } else {
-                navbar.classList.remove('nav-scrolled');
-            }
-            
-            lastScrollTop = scrollTop;
-        });
 
         // Mobile menu functionality
         const mobileMenuToggle = document.getElementById('mobileMenuToggle');

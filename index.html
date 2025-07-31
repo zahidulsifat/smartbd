@@ -5,8 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Technologies (BD) Ltd - Leading ICT Solutions Provider</title>
     <meta name="description" content="Smart Technologies (BD) Ltd is a leading ICT distribution company in Bangladesh with 100+ world-renowned brands. We deliver innovative technology solutions across the nation.">
+    <meta name="keywords" content="ICT solutions, technology distribution, Bangladesh, smart technologies, hardware solutions, cloud services, managed IT">
+    <meta name="author" content="Smart Technologies (BD) Ltd">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://smarttechnologiesbd.com/">
+    <meta property="og:title" content="Smart Technologies (BD) Ltd - Leading ICT Solutions Provider">
+    <meta property="og:description" content="Leading ICT distribution company in Bangladesh with 100+ world-renowned brands. Delivering innovative technology solutions across the nation.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/zahidulsifat/smartbd/main/images/STBL%20Logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://smarttechnologiesbd.com/">
+    <meta property="twitter:title" content="Smart Technologies (BD) Ltd - Leading ICT Solutions Provider">
+    <meta property="twitter:description" content="Leading ICT distribution company in Bangladesh with 100+ world-renowned brands.">
+    <meta property="twitter:image" content="https://raw.githubusercontent.com/zahidulsifat/smartbd/main/images/STBL%20Logo.png">
+
     <link rel="icon" type="image/png" href="images/fav.png">
-    
+    <link rel="apple-touch-icon" href="images/fav.png">
+    <link rel="canonical" href="https://smarttechnologiesbd.com/">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#667eea">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Smart Tech BD">
+
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,10 +59,13 @@
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 </head>
 <body>
+    <!-- Skip to content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- Header Section -->
-    <header class="header">
+    <header class="header" role="banner">
         <!-- Navigation -->
-        <nav id="navbar">
+        <nav id="navbar" role="navigation" aria-label="Main navigation">
             <div class="nav-container">
                 <a href="index.html" class="logo-link">
                     <img src="https://raw.githubusercontent.com/zahidulsifat/smartbd/main/images/STBL%20Logo.png" alt="STBL Logo" class="logo">
@@ -82,11 +115,13 @@
 
     </header>
 
-    <!-- Solutions Section -->
-    <section class="solutions" id="solutions">
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Solutions Section -->
+        <section class="solutions" id="solutions" aria-labelledby="solutions-heading">
         <div class="container">
             <div class="solutions-header fade-in-up">
-                <h2>Our Technology Solutions</h2>
+                <h2 id="solutions-heading">Our Technology Solutions</h2>
                 <p>Comprehensive technology solutions tailored for modern businesses. We provide cutting-edge infrastructure and services to drive your digital transformation.</p>
             </div>
             
@@ -118,11 +153,11 @@
         </div>
     </section>
 
-    <!-- Call to Action Section -->
-    <section class="cta">
+        <!-- Call to Action Section -->
+        <section class="cta" aria-labelledby="cta-heading">
         <div class="container">
             <div class="cta-content fade-in-up">
-                <h2>Ready to Transform Your Business?</h2>
+                <h2 id="cta-heading">Ready to Transform Your Business?</h2>
                 <p>Contact us today for customized IT solutions that drive growth, innovation, and success. Let's build the future of your business together.</p>
                 <a href="Contact.html" class="cta-button">
                     <i class="fas fa-rocket" style="margin-right: 8px;"></i>
@@ -130,10 +165,11 @@
                 </a>
             </div>
         </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content fade-in-up">
                 <h4>Smart Technologies (BD) Ltd</h4>
@@ -161,7 +197,36 @@
         </div>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- Optimized JavaScript Module -->
+    <script src="js/app.js" defer></script>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Smart Technologies (BD) Ltd",
+        "description": "Leading ICT distribution company in Bangladesh with 100+ world-renowned brands",
+        "url": "https://smarttechnologiesbd.com",
+        "logo": "https://raw.githubusercontent.com/zahidulsifat/smartbd/main/images/STBL%20Logo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "areaServed": "BD",
+            "availableLanguage": "English"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "BD"
+        },
+        "sameAs": [
+            "https://facebook.com/smarttechbd",
+            "https://twitter.com/smarttechbd",
+            "https://linkedin.com/company/smarttechbd"
+        ]
+    }
+    </script>
+
     <script>
         // Dark Mode Toggle
         const themeToggle = document.getElementById('themeToggle');
@@ -193,21 +258,7 @@
             }
         }
 
-        // Navigation scroll effect
-        const navbar = document.getElementById('navbar');
-        let lastScrollTop = 0;
 
-        window.addEventListener('scroll', () => {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            
-            if (scrollTop > 100) {
-                navbar.classList.add('nav-scrolled');
-            } else {
-                navbar.classList.remove('nav-scrolled');
-            }
-            
-            lastScrollTop = scrollTop;
-        });
 
         // Mobile menu functionality
         const mobileMenuToggle = document.getElementById('mobileMenuToggle');

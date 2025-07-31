@@ -6,7 +6,11 @@
     <title>About Us - Smart Technologies (BD) Ltd</title>
     <meta name="description" content="Learn about Smart Technologies (BD) Ltd, Bangladesh's leading ICT distribution company with over 100 world-renowned brands in our portfolio.">
     <link rel="icon" type="image/png" href="images/fav.png">
-    
+    <link rel="apple-touch-icon" href="images/fav.png">
+    <link rel="canonical" href="https://smarttechnologiesbd.com/About.html">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#667eea">
+
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -96,7 +100,7 @@
                     </a>
                 </div>
                 <div class="about-image fade-in-right">
-                    <img src="images/about.jpg" alt="About Smart Technologies" loading="lazy">
+                    <img data-src="images/about.jpg" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%23f5f5f5'/%3E%3C/svg%3E" alt="About Smart Technologies" class="lazy" loading="lazy" width="400" height="300">
                 </div>
             </div>
         </div>
@@ -211,21 +215,7 @@
             }
         }
 
-        // Navigation scroll effect
-        const navbar = document.getElementById('navbar');
-        let lastScrollTop = 0;
 
-        window.addEventListener('scroll', () => {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            
-            if (scrollTop > 100) {
-                navbar.classList.add('nav-scrolled');
-            } else {
-                navbar.classList.remove('nav-scrolled');
-            }
-            
-            lastScrollTop = scrollTop;
-        });
 
         // Mobile menu functionality
         const mobileMenuToggle = document.getElementById('mobileMenuToggle');
