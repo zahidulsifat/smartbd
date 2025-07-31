@@ -91,6 +91,7 @@ body {
     color: var(--neutral-800);
     background-color: var(--neutral-50);
     overflow-x: hidden;
+    margin: 20px;
 }
 
 /* Typography */
@@ -132,27 +133,56 @@ a:hover {
 
 .section {
     padding: var(--space-20) 0;
+    margin: 0 -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Remove margins for main sections */
+section.solutions,
+section.cta,
+section.about-us,
+section.facilities,
+section.product,
+section.blog-content,
+section.location,
+section.contact-us {
+    margin: 0 -20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* Header and Navigation */
 .header {
-    min-height: 100vh;
-    background: var(--primary-gradient);
+    background: transparent;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+    margin: -20px -20px 0 -20px;
+    padding: 0 20px;
 }
 
-.header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-opacity='0.03'%3E%3Cpolygon fill='%23ffffff' points='50 0 60 40 100 50 60 60 50 100 40 60 0 50 40 40'/%3E%3C/g%3E%3C/svg%3E") center/80px;
-    opacity: 0.4;
+/* Banner Text */
+.banner-text {
+    padding: var(--space-20) 0 var(--space-12) 0;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.banner-text h1 {
+    font-size: clamp(var(--text-4xl), 5vw, var(--text-6xl));
+    font-weight: 800;
+    margin-bottom: var(--space-6);
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.banner-text p {
+    font-size: var(--text-xl);
+    color: var(--neutral-600);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
 }
 
 nav {
@@ -173,7 +203,6 @@ nav {
 
 .nav-scrolled {
     background: rgba(255, 255, 255, 0.98);
-    box-shadow: var(--shadow-lg);
 }
 
 .nav-container {
@@ -265,7 +294,6 @@ nav {
     left: 0;
     right: 0;
     background: white;
-    box-shadow: var(--shadow-xl);
     border-radius: 0 0 var(--radius-xl) var(--radius-xl);
     opacity: 0;
     visibility: hidden;
@@ -379,7 +407,6 @@ nav {
 .btn-primary:hover {
     background: rgba(255, 255, 255, 0.3);
     transform: translateY(-2px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
 .btn-secondary {
@@ -402,6 +429,12 @@ nav {
     background: white;
     color: var(--primary-color);
     transform: translateY(-2px);
+}
+
+.phone-icon {
+    margin-right: 8px;
+    font-size: inherit;
+    display: inline-block;
 }
 
 /* Solutions Section */
@@ -443,7 +476,6 @@ nav {
     background: white;
     border-radius: var(--radius-2xl);
     padding: var(--space-8);
-    box-shadow: var(--shadow);
     border: 1px solid var(--neutral-200);
     transition: var(--transition);
     position: relative;
@@ -469,7 +501,6 @@ nav {
 
 .solution-card:hover {
     transform: translateY(-8px);
-    box-shadow: var(--shadow-xl);
     border-color: var(--primary-color);
 }
 
@@ -550,12 +581,10 @@ nav {
     font-size: var(--text-lg);
     transition: var(--transition);
     text-decoration: none;
-    box-shadow: var(--shadow-lg);
 }
 
 .cta-button:hover {
     transform: translateY(-3px);
-    box-shadow: var(--shadow-2xl);
     background: var(--neutral-50);
 }
 
@@ -564,6 +593,9 @@ nav {
     background: var(--neutral-900);
     color: white;
     padding: var(--space-20) 0 var(--space-8) 0;
+    margin: 0 -20px -20px -20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .footer-content {
@@ -611,7 +643,6 @@ nav {
 .social-icon:hover {
     background: var(--primary-color);
     transform: translateY(-3px);
-    box-shadow: var(--shadow-lg);
 }
 
 .footer-credit {
@@ -737,9 +768,7 @@ nav {
         color: var(--neutral-800);
     }
     
-    * {
-        box-shadow: none !important;
-    }
+
 }
 
 /* Focus Styles for Accessibility */
@@ -820,7 +849,6 @@ nav {
     height: 400px;
     object-fit: cover;
     border-radius: var(--radius-2xl);
-    box-shadow: var(--shadow-xl);
 }
 
 /* Facilities/Values section */
@@ -836,12 +864,10 @@ nav {
     text-align: center;
     border: 1px solid var(--neutral-200);
     transition: var(--transition);
-    box-shadow: var(--shadow);
 }
 
 .facility-card:hover {
     transform: translateY(-8px);
-    box-shadow: var(--shadow-xl);
     border-color: var(--primary-color);
 }
 
@@ -867,7 +893,6 @@ nav {
     background: white;
     border-radius: var(--radius-2xl);
     padding: var(--space-8);
-    box-shadow: var(--shadow);
     border: 1px solid var(--neutral-200);
     transition: var(--transition);
     position: relative;
@@ -892,7 +917,6 @@ nav {
 
 .card:hover {
     transform: translateY(-8px);
-    box-shadow: var(--shadow-xl);
     border-color: var(--primary-color);
 }
 
@@ -924,7 +948,6 @@ nav {
     background: white;
     border-radius: var(--radius-2xl);
     padding: var(--space-8);
-    box-shadow: var(--shadow-lg);
     border: 1px solid var(--neutral-200);
 }
 
@@ -958,7 +981,6 @@ nav {
     background: white;
     border-radius: var(--radius-2xl);
     overflow: hidden;
-    box-shadow: var(--shadow-lg);
     border: 1px solid var(--neutral-200);
     align-self: start;
 }
@@ -999,7 +1021,6 @@ nav {
     height: 400px;
     border-radius: var(--radius-2xl);
     border: 1px solid var(--neutral-200);
-    box-shadow: var(--shadow-lg);
 }
 
 .contact-us {
@@ -1031,13 +1052,11 @@ nav {
     align-items: flex-start;
     border: 1px solid var(--neutral-200);
     transition: var(--transition-fast);
-    box-shadow: var(--shadow);
 }
 
 .contact-info:hover {
     border-color: var(--primary-color);
     transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
 }
 
 .contact-info .fa {
@@ -1067,7 +1086,6 @@ nav {
     background: white;
     border-radius: var(--radius-2xl);
     padding: var(--space-8);
-    box-shadow: var(--shadow-lg);
     border: 1px solid var(--neutral-200);
 }
 
@@ -1095,7 +1113,6 @@ nav {
 .form-input:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
 .form-textarea {
