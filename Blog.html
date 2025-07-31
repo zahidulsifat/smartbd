@@ -27,6 +27,20 @@
     <!-- Load Font Awesome asynchronously -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+
+    <!-- Prevent flash of light theme - Apply immediately -->
+    <script>
+        (function() {
+            try {
+                const savedTheme = localStorage.getItem('smart-tech-theme');
+                if (savedTheme) {
+                    document.documentElement.setAttribute('data-theme', savedTheme);
+                }
+            } catch (e) {
+                // Fallback if localStorage fails
+            }
+        })();
+    </script>
 </head>
 <body>
     <!-- Header Section -->
@@ -51,6 +65,8 @@
                         <i class="fas fa-moon theme-icon" id="themeIcon"></i>
                         <span class="theme-text" id="themeText">Dark</span>
                     </button>
+
+
 
                     <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
                         <span></span>
@@ -243,99 +259,24 @@
         </div>
     </footer>
 
+    <!-- Dark Mode Module -->
+    <script src="js/dark-mode.js" defer></script>
+
     <!-- JavaScript -->
+    <script src="js/app.js" defer></script>
+
+    <!-- Blog specific JavaScript -->
     <script>
-        // Dark Mode Toggle
-        const themeToggle = document.getElementById('themeToggle');
-        const themeIcon = document.getElementById('themeIcon');
-        const themeText = document.getElementById('themeText');
-        const htmlElement = document.documentElement;
-
-        // Check for saved theme preference or default to light mode
-        const currentTheme = localStorage.getItem('theme') || 'light';
-        htmlElement.setAttribute('data-theme', currentTheme);
-        updateThemeToggle(currentTheme);
-
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = htmlElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
-            htmlElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateThemeToggle(newTheme);
-        });
-
-        function updateThemeToggle(theme) {
-            if (theme === 'dark') {
-                themeIcon.className = 'fas fa-sun theme-icon';
-                themeText.textContent = 'Light';
-            } else {
-                themeIcon.className = 'fas fa-moon theme-icon';
-                themeText.textContent = 'Dark';
-            }
-        }
-
-
-
-        // Mobile menu functionality
-        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
-        const mobileMenu = document.getElementById('mobileMenu');
-
-        mobileMenuToggle.addEventListener('click', () => {
-            mobileMenuToggle.classList.toggle('active');
-            mobileMenu.classList.toggle('active');
-        });
-
-        // Close mobile menu when clicking on links
-        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
-        mobileNavLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenuToggle.classList.remove('active');
-                mobileMenu.classList.remove('active');
-            });
-        });
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!mobileMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
-                mobileMenuToggle.classList.remove('active');
-                mobileMenu.classList.remove('active');
-            }
-        });
-
-        // Close mobile menu on escape key
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                mobileMenuToggle.classList.remove('active');
-                mobileMenu.classList.remove('active');
-            }
-        });
-
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.animationPlayState = 'running';
-                }
-            });
-        }, observerOptions);
-
-        // Observe all animated elements
-        document.querySelectorAll('.fade-in-up, .fade-in-left, .fade-in-right').forEach(el => {
-            el.style.animationPlayState = 'paused';
-            observer.observe(el);
-        });
-
         // Comment form submission
-        document.querySelector('.comment-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your comment! We appreciate your feedback.');
-            this.reset();
+        document.addEventListener('DOMContentLoaded', function() {
+            const commentForm = document.querySelector('.comment-form');
+            if (commentForm) {
+                commentForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Thank you for your comment! We appreciate your feedback.');
+                    this.reset();
+                });
+            }
         });
     </script>
 </body>

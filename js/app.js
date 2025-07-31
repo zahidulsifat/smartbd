@@ -7,7 +7,6 @@ class SmartTechApp {
     }
 
     init() {
-        this.setupThemeToggle();
         this.setupMobileMenu();
         this.setupAnimations();
         this.setupLazyLoading();
@@ -15,41 +14,7 @@ class SmartTechApp {
         this.setupPerformanceOptimizations();
     }
 
-    // Dark Mode Toggle
-    setupThemeToggle() {
-        const themeToggle = document.getElementById('themeToggle');
-        const themeIcon = document.getElementById('themeIcon');
-        const themeText = document.getElementById('themeText');
-        const htmlElement = document.documentElement;
 
-        if (!themeToggle) return;
-
-        // Check for saved theme preference or default to light mode
-        const currentTheme = localStorage.getItem('theme') || 'light';
-        htmlElement.setAttribute('data-theme', currentTheme);
-        this.updateThemeToggle(currentTheme, themeIcon, themeText);
-
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = htmlElement.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
-            htmlElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            this.updateThemeToggle(newTheme, themeIcon, themeText);
-        });
-    }
-
-    updateThemeToggle(theme, themeIcon, themeText) {
-        if (!themeIcon || !themeText) return;
-        
-        if (theme === 'dark') {
-            themeIcon.className = 'fas fa-sun theme-icon';
-            themeText.textContent = 'Light';
-        } else {
-            themeIcon.className = 'fas fa-moon theme-icon';
-            themeText.textContent = 'Dark';
-        }
-    }
 
     // Mobile Menu
     setupMobileMenu() {
