@@ -58,19 +58,7 @@
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 
-    <!-- Prevent flash of light theme - Apply immediately -->
-    <script>
-        (function() {
-            try {
-                const savedTheme = localStorage.getItem('smart-tech-theme');
-                if (savedTheme) {
-                    document.documentElement.setAttribute('data-theme', savedTheme);
-                }
-            } catch (e) {
-                // Fallback if localStorage fails
-            }
-        })();
-    </script>
+
 </head>
 <body>
     <!-- Skip to content for accessibility -->
@@ -93,12 +81,6 @@
                         <li><a href="Blog.html" class="nav-link">Blog</a></li>
                         <li><a href="Contact.html" class="nav-link">Contact</a></li>
                     </ul>
-
-                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-                        <i class="fas fa-moon theme-icon" id="themeIcon"></i>
-                        <span class="theme-text" id="themeText">Dark</span>
-                    </button>
-
 
 
                     <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
@@ -219,48 +201,6 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             console.log('DOM loaded, initializing functionality...');
-
-            // Dark Mode Toggle
-            const themeToggle = document.getElementById('themeToggle');
-            const themeIcon = document.getElementById('themeIcon');
-            const themeText = document.getElementById('themeText');
-            const html = document.documentElement;
-
-            // Set initial theme
-            const savedTheme = localStorage.getItem('smart-tech-theme') || 'light';
-            html.setAttribute('data-theme', savedTheme);
-            updateThemeDisplay(savedTheme);
-
-            function updateThemeDisplay(theme) {
-                if (!themeIcon || !themeText) return;
-
-                if (theme === 'dark') {
-                    themeIcon.className = 'fas fa-sun theme-icon';
-                    themeText.textContent = 'Light';
-                } else {
-                    themeIcon.className = 'fas fa-moon theme-icon';
-                    themeText.textContent = 'Dark';
-                }
-            }
-
-            // Dark mode toggle functionality
-            if (themeToggle) {
-                themeToggle.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    console.log('Theme toggle clicked');
-
-                    const currentTheme = html.getAttribute('data-theme') || 'light';
-                    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-
-                    html.setAttribute('data-theme', newTheme);
-                    localStorage.setItem('smart-tech-theme', newTheme);
-                    updateThemeDisplay(newTheme);
-
-                    console.log('Theme switched to:', newTheme);
-                });
-            } else {
-                console.error('Theme toggle button not found!');
-            }
 
             // Mobile Menu Toggle
             const mobileMenuToggle = document.getElementById('mobileMenuToggle');
