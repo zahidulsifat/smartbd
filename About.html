@@ -1,85 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Smart Technologies (BD) Ltd</title>
-		<link rel="icon" type="image" href="images/fav.png">
-		<!-- style.css linking here -->
-		<link rel="stylesheet" href="css/style.css">
-		<!-- font family linking here -->
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-		<!-- font-awesome.min.css linking here -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	</head>
-	<body>
-		<!-- header section strt -->
-		<section class="sub-header">
-			<!-- nav strt -->
-			<nav>
-				<a href="index.html"><img src="images/logo.png" alt=""></a>
-				<div class="nav-links" id="navLinks">
-					<i class="fa fa-times" onclick="hideMenu()"></i>
-					<ul>
-						<li>
-							<a href="index.html">HOME</a>
-						</li>
-						<li>
-							<a href="About.html">ABOUT</a>
-						</li>
-						<li>
-							<a href="Products.html">PRODUCT PORTFOLIO</a>
-						</li>
-						<li>
-							<a href="Blog.html">BLOG</a>
-						</li>
-						<li>
-							<a href="Contact.html">CONTACT</a>
-						</li>
-					</ul>
-				</div>
-				<i class="fa fa-bars" onclick="showMenu()"></i>
-			</nav>
-			<!-- nav end -->
-			<h1>About Us</h1>
-		</section>
-		<!-- header section end -->
-		<!-- about us content strt -->
-		<section class="about-us">
-			<div class="row">
-				<div class="about-col">
-				  <h1>We are the largest ICT distribution company in Bangladesh</h1>
-				  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repudiandae aspernatur maiores recusandae eveniet nesciunt quia illum voluptatibus voluptate error, voluptates labore soluta sed consequatur! Quis repellendus quia, expedita sit. Lorem ipsum dolor sit amet consectetur.</p>
-				  <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
-				</div>
-				<div class="about-col">
-				   <img src="images/about.jpg" alt="">
-				</div>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About Us - Smart Technologies (BD) Ltd</title>
+	<link rel="icon" type="image" href="images/fav.png">
+	<!-- Modern font -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<!-- Fallback font -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Main stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- Header section -->
+	<section class="sub-header">
+		<!-- Navigation -->
+		<nav>
+			<a href="index.html"><img src="images/logo.png" alt="Smart Technologies Logo"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="About.html">ABOUT</a></li>
+					<li><a href="Products.html">PRODUCTS</a></li>
+					<li><a href="Blog.html">BLOG</a></li>
+					<li><a href="Contact.html">CONTACT</a></li>
+				</ul>
 			</div>
-		</section>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
 		
-		<!-- footer strt -->
-		<section class="footer">
-			<h4>About Us</h4>
-			<p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Ut reprehenderit labore eligendi tenetur, sapiente ab doloremque id provident dignissimos <br> ipsa perspiciatis voluptates sunt facilis minus omnis illo ea maxime nesciunt.</p>
-			<div class="icons">
-				<i class="fa fa-facebook"></i>
-				<i class="fa fa-twitter"></i>
-				<i class="fa fa-instagram"></i>
-				<i class="fa fa-linkedin"></i>
+		<h1>About Us</h1>
+	</section>
+
+	<!-- About content section -->
+	<section class="about-us">
+		<div class="container">
+			<div class="about-grid">
+				<div class="about-content">
+					<h1>Leading ICT Distribution in Bangladesh</h1>
+					<p>Smart Technologies (BD) Ltd stands as one of Bangladesh's premier ICT distribution companies, representing over 100 world-renowned technology brands. Our mission is to bridge the gap between cutting-edge global technology and local business needs.</p>
+					<p>With years of experience in the technology sector, we have built strong partnerships with leading manufacturers and developed an extensive distribution network that serves businesses across Bangladesh. Our commitment to excellence and customer satisfaction has made us a trusted name in the industry.</p>
+					<a href="Contact.html" class="btn-secondary">Get In Touch</a>
+				</div>
+				<div class="about-image">
+					<img src="images/about.jpg" alt="About Smart Technologies">
+				</div>
 			</div>
-			<p>Made With <i class="fa fa-heart"></i> by <strong>Zahidul Sifat</strong></p>
-		</section>
-		<!-- footer end -->
-		<!-- Javascript for toggle menu -->
-		<script>
-			var navLinks = document.getElementById("navLinks");
-			function showMenu(){
-				navLinks.style.right = "0";
+		</div>
+	</section>
+
+	<!-- Our Values section -->
+	<section class="facilities">
+		<div class="container">
+			<h1 class="section-title text-center">Our Core Values</h1>
+			<p class="section-subtitle text-center">The principles that drive our commitment to excellence</p>
+			
+			<div class="grid">
+				<div class="facility-card">
+					<div style="width: 80px; height: 80px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+						<i class="fa fa-star" style="color: white; font-size: 32px;"></i>
+					</div>
+					<h3>Excellence</h3>
+					<p>We strive for excellence in everything we do, from product selection to customer service.</p>
+				</div>
+				<div class="facility-card">
+					<div style="width: 80px; height: 80px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+						<i class="fa fa-handshake-o" style="color: white; font-size: 32px;"></i>
+					</div>
+					<h3>Partnership</h3>
+					<p>Building long-term relationships with our clients and vendor partners for mutual growth.</p>
+				</div>
+				<div class="facility-card">
+					<div style="width: 80px; height: 80px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+						<i class="fa fa-rocket" style="color: white; font-size: 32px;"></i>
+					</div>
+					<h3>Innovation</h3>
+					<p>Continuously evolving to bring the latest technological innovations to our customers.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<section class="footer">
+		<div class="container">
+			<h4>Smart Technologies (BD) Ltd</h4>
+			<p>Your trusted partner in digital transformation. We provide cutting-edge technology solutions that empower businesses to achieve their goals and stay ahead in the digital age.</p>
+			
+			<div class="social-icons">
+				<a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
+				<a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+				<a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+				<a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+			</div>
+			
+			<p class="footer-credit">Crafted with <i class="fa fa-heart" style="color: #ff4757;"></i> by <strong>Zahidul Sifat</strong></p>
+		</div>
+	</section>
+
+	<!-- Mobile menu script -->
+	<script>
+		var navLinks = document.getElementById("navLinks");
+		
+		function showMenu() {
+			navLinks.style.right = "0";
+		}
+		
+		function hideMenu() {
+			navLinks.style.right = "-280px";
+		}
+		
+		// Close menu when clicking outside
+		document.addEventListener('click', function(event) {
+			if (!navLinks.contains(event.target) && !event.target.classList.contains('fa-bars')) {
+				hideMenu();
 			}
-			function hideMenu(){
-				navLinks.style.right = "-200px";
+		});
+		
+		// Close menu when pressing escape key
+		document.addEventListener('keydown', function(event) {
+			if (event.key === 'Escape') {
+				hideMenu();
 			}
-		</script>
-	</body>
+		});
+	</script>
+</body>
 </html>
