@@ -7,17 +7,26 @@
     <meta name="description" content="Get in touch with Smart Technologies (BD) Ltd. Contact us for technology solutions, support, and business inquiries.">
     <link rel="icon" type="image/png" href="images/fav.png">
     
-    <!-- Fonts -->
+    <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+    <!-- Preload critical CSS -->
+    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+
+    <!-- Load fonts asynchronously with font-display swap -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </noscript>
+
+    <!-- Load Font Awesome asynchronously -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 </head>
 <body>
     <!-- Header Section -->
@@ -29,19 +38,26 @@
                     <img src="https://raw.githubusercontent.com/zahidulsifat/smartbd/main/images/STBL%20Logo.png" alt="STBL Logo" class="logo">
                 </a>
 
-                <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="About.html" class="nav-link">About</a></li>
-                    <li><a href="Products.html" class="nav-link">Products</a></li>
-                    <li><a href="Blog.html" class="nav-link">Blog</a></li>
-                    <li><a href="Contact.html" class="nav-link active">Contact</a></li>
-                </ul>
+                <div class="nav-right">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="About.html" class="nav-link">About</a></li>
+                        <li><a href="Products.html" class="nav-link">Products</a></li>
+                        <li><a href="Blog.html" class="nav-link">Blog</a></li>
+                        <li><a href="Contact.html" class="nav-link active">Contact</a></li>
+                    </ul>
 
-                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon theme-icon" id="themeIcon"></i>
+                        <span class="theme-text" id="themeText">Dark</span>
+                    </button>
+
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
             </div>
 
             <!-- Mobile Menu -->
@@ -88,7 +104,6 @@
                     <h2>Get In Touch</h2>
                     
                     <div class="contact-info">
-                        <i class="fas fa-map-marker-alt"></i>
                         <div class="contact-details">
                             <h5>Our Office</h5>
                             <p>Jahir Smart Tower<br>205/1 & 205/1/A, West Kafrul<br>Begum Rokeya Sharani, Taltola<br>Dhaka-1207, Bangladesh</p>
@@ -96,7 +111,6 @@
                     </div>
                     
                     <div class="contact-info">
-                        <i class="fas fa-phone"></i>
                         <div class="contact-details">
                             <h5>Phone Numbers</h5>
                             <p>+880-2-58153636<br>+880-2-55025235<br>Sunday to Thursday, 10AM to 6PM</p>
@@ -104,7 +118,6 @@
                     </div>
                     
                     <div class="contact-info">
-                        <i class="fas fa-envelope"></i>
                         <div class="contact-details">
                             <h5>Email Address</h5>
                             <p>info@smartbd.com<br>Send us your inquiry anytime</p>
@@ -112,7 +125,6 @@
                     </div>
                     
                     <div class="contact-info">
-                        <i class="fas fa-clock"></i>
                         <div class="contact-details">
                             <h5>Business Hours</h5>
                             <p>Sunday - Thursday: 10:00 AM - 6:00 PM<br>Friday - Saturday: Closed<br>Emergency support available 24/7</p>
@@ -247,6 +259,36 @@
 
     <!-- JavaScript -->
     <script>
+        // Dark Mode Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const themeText = document.getElementById('themeText');
+        const htmlElement = document.documentElement;
+
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        htmlElement.setAttribute('data-theme', currentTheme);
+        updateThemeToggle(currentTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+            htmlElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeToggle(newTheme);
+        });
+
+        function updateThemeToggle(theme) {
+            if (theme === 'dark') {
+                themeIcon.className = 'fas fa-sun theme-icon';
+                themeText.textContent = 'Light';
+            } else {
+                themeIcon.className = 'fas fa-moon theme-icon';
+                themeText.textContent = 'Dark';
+            }
+        }
+
         // Navigation scroll effect
         const navbar = document.getElementById('navbar');
         let lastScrollTop = 0;
