@@ -230,7 +230,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: clamp(1rem, 3vw, 1.5rem) 0;
-    margin: 0 20px;
+    margin: 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -765,7 +765,7 @@ nav {
 /* Responsive Design */
 @media (max-width: 480px) {
     nav {
-        margin: 0 10px;
+        margin: 0;
     }
 
     .logo {
