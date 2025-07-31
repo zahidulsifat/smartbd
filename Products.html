@@ -1,141 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Products - Smart Technologies (BD) Ltd</title>
-	<link rel="icon" type="image" href="images/fav.png">
-	<!-- Modern font -->
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-	<!-- Fallback font -->
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- Main stylesheet -->
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products & Services - Smart Technologies (BD) Ltd</title>
+    <meta name="description" content="Explore our comprehensive range of technology products and services including hardware solutions, cloud services, and managed IT services.">
+    <link rel="icon" type="image/png" href="images/fav.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<!-- Header section -->
-	<section class="sub-header">
-		<!-- Navigation -->
-		<nav>
-			<a href="index.html"><img src="images/logo.png" alt="Smart Technologies Logo"></a>
-			<div class="nav-links" id="navLinks">
-				<i class="fa fa-times" onclick="hideMenu()"></i>
-				<ul>
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="About.html">ABOUT</a></li>
-					<li><a href="Products.html">PRODUCTS</a></li>
-					<li><a href="Blog.html">BLOG</a></li>
-					<li><a href="Contact.html">CONTACT</a></li>
-				</ul>
-			</div>
-			<i class="fa fa-bars" onclick="showMenu()"></i>
-		</nav>
-		
-		<h1>Our Product Portfolio</h1>
-	</section>
+    <!-- Header Section -->
+    <section class="sub-header">
+        <!-- Navigation -->
+        <nav id="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo-link">
+                    <img src="https://raw.githubusercontent.com/zahidulsifat/smartbd/main/images/STBL%20Logo.png" alt="STBL Logo" class="logo">
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="About.html" class="nav-link">About</a></li>
+                    <li><a href="Products.html" class="nav-link active">Products</a></li>
+                    <li><a href="Blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="Contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <ul>
+                    <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+                    <li><a href="About.html" class="mobile-nav-link">About</a></li>
+                    <li><a href="Products.html" class="mobile-nav-link">Products</a></li>
+                    <li><a href="Blog.html" class="mobile-nav-link">Blog</a></li>
+                    <li><a href="Contact.html" class="mobile-nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <h1 class="fade-in-up">Our Product Portfolio</h1>
+    </section>
 
-	<!-- Product Portfolio section -->
-	<section class="product">
-		<div class="container">
-			<h1 class="section-title">Technology Solutions</h1>
-			<p class="section-subtitle">Comprehensive range of technology products and services for modern businesses</p>
-			
-			<div class="grid">
-				<div class="card">
-					<h3>Hardware Solutions</h3>
-					<p>Enterprise servers, workstations, networking equipment, and storage solutions from leading manufacturers like Dell, HP, Cisco, and more.</p>
-				</div>
-				<div class="card">
-					<h3>Cloud Services</h3>
-					<p>Public, private, and hybrid cloud solutions including migration services, cloud storage, and managed cloud infrastructure.</p>
-				</div>
-				<div class="card">
-					<h3>Managed IT Services</h3>
-					<p>Complete IT management including 24/7 monitoring, help desk support, cybersecurity, and infrastructure maintenance.</p>
-				</div>
-			</div>
-		</div>
-	</section>
+    <!-- Product Portfolio Section -->
+    <section class="product">
+        <div class="container">
+            <h1 class="section-title fade-in-up">Technology Solutions</h1>
+            <p class="section-subtitle fade-in-up">Comprehensive range of technology products and services for modern businesses</p>
+            
+            <div class="grid">
+                <div class="card fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="solution-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Hardware Solutions</h3>
+                    <p>Enterprise servers, workstations, networking equipment, and storage solutions from leading manufacturers like Dell, HP, Cisco, and more.</p>
+                </div>
+                
+                <div class="card fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="solution-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Services</h3>
+                    <p>Public, private, and hybrid cloud solutions including migration services, cloud storage, and managed cloud infrastructure.</p>
+                </div>
+                
+                <div class="card fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="solution-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Managed IT Services</h3>
+                    <p>Complete IT management including 24/7 monitoring, help desk support, cybersecurity, and infrastructure maintenance.</p>
+                </div>
+                
+                <div class="card fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="solution-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cybersecurity Solutions</h3>
+                    <p>Advanced security solutions including firewall management, threat detection, endpoint protection, and security consulting.</p>
+                </div>
+                
+                <div class="card fade-in-up" style="animation-delay: 0.5s;">
+                    <div class="solution-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Data Management</h3>
+                    <p>Comprehensive data solutions including backup and recovery, data analytics, database management, and storage optimization.</p>
+                </div>
+                
+                <div class="card fade-in-up" style="animation-delay: 0.6s;">
+                    <div class="solution-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Training & Support</h3>
+                    <p>Professional training programs, technical support, and consulting services to maximize your technology investments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Features section -->
-	<section class="facilities">
-		<div class="container">
-			<h1 class="section-title text-center">What Sets Us Apart</h1>
-			<p class="section-subtitle text-center">Why businesses choose Smart Technologies for their IT needs</p>
-			
-			<div class="grid">
-				<div class="facility-card">
-					<img src="images/library.png" alt="World Class Brands" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-					<h3>World Class Brands</h3>
-					<p>Partnerships with over 100 leading global technology brands ensuring quality and reliability.</p>
-				</div>
-				<div class="facility-card">
-					<img src="images/basketball.png" alt="Premium Support" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-					<h3>Premium Support</h3>
-					<p>Dedicated technical support team providing expert assistance and maintenance services.</p>
-				</div>
-				<div class="facility-card">
-					<img src="images/cafeteria.png" alt="Warranty Coverage" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
-					<h3>Comprehensive Warranty</h3>
-					<p>Extended warranty coverage and replacement services to ensure business continuity.</p>
-				</div>
-			</div>
-		</div>
-	</section>
+    <!-- Features Section -->
+    <section class="facilities">
+        <div class="container">
+            <h1 class="section-title fade-in-up">What Sets Us Apart</h1>
+            <p class="section-subtitle fade-in-up">Why businesses choose Smart Technologies for their IT needs</p>
+            
+            <div class="grid">
+                <div class="facility-card fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="solution-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>World Class Brands</h3>
+                    <p>Partnerships with over 100 leading global technology brands ensuring quality, reliability, and cutting-edge innovation.</p>
+                </div>
+                
+                <div class="facility-card fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="solution-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Premium Support</h3>
+                    <p>Dedicated technical support team providing expert assistance, maintenance services, and round-the-clock monitoring.</p>
+                </div>
+                
+                <div class="facility-card fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="solution-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Comprehensive Warranty</h3>
+                    <p>Extended warranty coverage and replacement services to ensure business continuity and minimize downtime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Call to Action -->
-	<section class="cta">
-		<div class="container">
-			<h1>Need a Custom Solution?</h1>
-			<p style="margin-bottom: 2rem; font-size: 1.1rem; opacity: 0.9;">Let's discuss your specific requirements and create a tailored technology solution for your business.</p>
-			<a href="Contact.html" class="hero-btn">Contact Our Team</a>
-		</div>
-	</section>
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content fade-in-up">
+                <h2>Need a Custom Solution?</h2>
+                <p>Let's discuss your specific requirements and create a tailored technology solution that perfectly fits your business needs and budget.</p>
+                <a href="Contact.html" class="cta-button">
+                    <i class="fas fa-comments" style="margin-right: 8px;"></i>
+                    Contact Our Team
+                </a>
+            </div>
+        </div>
+    </section>
 
-	<!-- Footer -->
-	<section class="footer">
-		<div class="container">
-			<h4>Smart Technologies (BD) Ltd</h4>
-			<p>Your trusted partner in digital transformation. We provide cutting-edge technology solutions that empower businesses to achieve their goals and stay ahead in the digital age.</p>
-			
-			<div class="social-icons">
-				<a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
-				<a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
-				<a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
-				<a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
-			</div>
-			
-			<p class="footer-credit">Crafted with <i class="fa fa-heart" style="color: #ff4757;"></i> by <strong>Zahidul Sifat</strong></p>
-		</div>
-	</section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content fade-in-up">
+                <h4>Smart Technologies (BD) Ltd</h4>
+                <p>Your trusted partner in digital transformation. We provide cutting-edge technology solutions that empower businesses to achieve their goals and stay ahead in the digital age.</p>
+                
+                <div class="social-icons">
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                
+                <p class="footer-credit">
+                    Crafted with <i class="fas fa-heart" style="color: #667eea; margin: 0 4px;"></i> by <strong>Zahidul Sifat</strong>
+                </p>
+            </div>
+        </div>
+    </footer>
 
-	<!-- Mobile menu script -->
-	<script>
-		var navLinks = document.getElementById("navLinks");
-		
-		function showMenu() {
-			navLinks.style.right = "0";
-		}
-		
-		function hideMenu() {
-			navLinks.style.right = "-280px";
-		}
-		
-		// Close menu when clicking outside
-		document.addEventListener('click', function(event) {
-			if (!navLinks.contains(event.target) && !event.target.classList.contains('fa-bars')) {
-				hideMenu();
-			}
-		});
-		
-		// Close menu when pressing escape key
-		document.addEventListener('keydown', function(event) {
-			if (event.key === 'Escape') {
-				hideMenu();
-			}
-		});
-	</script>
+    <!-- JavaScript -->
+    <script>
+        // Navigation scroll effect
+        const navbar = document.getElementById('navbar');
+        let lastScrollTop = 0;
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > 100) {
+                navbar.classList.add('nav-scrolled');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+
+        // Mobile menu functionality
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenuToggle.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on links
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuToggle.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+                mobileMenuToggle.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            }
+        });
+
+        // Close mobile menu on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                mobileMenuToggle.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.fade-in-up, .fade-in-left, .fade-in-right').forEach(el => {
+            el.style.animationPlayState = 'paused';
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>

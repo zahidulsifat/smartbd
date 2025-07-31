@@ -1,195 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Blog - Smart Technologies (BD) Ltd</title>
-	<link rel="icon" type="image" href="images/fav.png">
-	<!-- Modern font -->
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-	<!-- Fallback font -->
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- Main stylesheet -->
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Insights - Smart Technologies (BD) Ltd</title>
+    <meta name="description" content="Read our latest insights, industry trends, and technology updates from Smart Technologies (BD) Ltd.">
+    <link rel="icon" type="image/png" href="images/fav.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<!-- Header section -->
-	<section class="sub-header">
-		<!-- Navigation -->
-		<nav>
-			<a href="index.html"><img src="images/logo.png" alt="Smart Technologies Logo"></a>
-			<div class="nav-links" id="navLinks">
-				<i class="fa fa-times" onclick="hideMenu()"></i>
-				<ul>
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="About.html">ABOUT</a></li>
-					<li><a href="Products.html">PRODUCTS</a></li>
-					<li><a href="Blog.html">BLOG</a></li>
-					<li><a href="Contact.html">CONTACT</a></li>
-				</ul>
-			</div>
-			<i class="fa fa-bars" onclick="showMenu()"></i>
-		</nav>
-		
-		<h1>Our Blog</h1>
-	</section>
+    <!-- Header Section -->
+    <section class="sub-header">
+        <!-- Navigation -->
+        <nav id="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo-link">
+                    <img src="https://raw.githubusercontent.com/zahidulsifat/smartbd/main/images/STBL%20Logo.png" alt="STBL Logo" class="logo">
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="About.html" class="nav-link">About</a></li>
+                    <li><a href="Products.html" class="nav-link">Products</a></li>
+                    <li><a href="Blog.html" class="nav-link active">Blog</a></li>
+                    <li><a href="Contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <ul>
+                    <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+                    <li><a href="About.html" class="mobile-nav-link">About</a></li>
+                    <li><a href="Products.html" class="mobile-nav-link">Products</a></li>
+                    <li><a href="Blog.html" class="mobile-nav-link">Blog</a></li>
+                    <li><a href="Contact.html" class="mobile-nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <h1 class="fade-in-up">Technology Insights</h1>
+    </section>
 
-	<!-- Blog content section -->
-	<section class="blog-content">
-		<div class="container">
-			<div class="blog-grid">
-				<div class="blog-main">
-					<img src="images/certificate.png" alt="Smart Technologies Strength">
-					
-					<h2>The Strength of Smart Technologies</h2>
-					<p style="margin-bottom: 1.5rem;">Discover what makes Smart Technologies (BD) Ltd a leader in the ICT distribution industry and why businesses across Bangladesh trust us with their technology needs.</p>
-					
-					<div style="margin-bottom: 2rem;">
-						<h3 style="color: #0066ff; margin-bottom: 1rem; font-size: 1.2rem;">Our Key Strengths</h3>
-						
-						<div style="margin-bottom: 1.5rem;">
-							<h4 style="margin-bottom: 0.5rem; color: #1a1a1a;">Broad Product Portfolio</h4>
-							<p>Representing over 100 world-renowned technology brands across various categories including hardware, software, and cloud solutions.</p>
-						</div>
-						
-						<div style="margin-bottom: 1.5rem;">
-							<h4 style="margin-bottom: 0.5rem; color: #1a1a1a;">Expert Team</h4>
-							<p>Our skilled professionals bring years of experience in technology consulting, implementation, and support services.</p>
-						</div>
-						
-						<div style="margin-bottom: 1.5rem;">
-							<h4 style="margin-bottom: 0.5rem; color: #1a1a1a;">Client Satisfaction</h4>
-							<p>Committed to delivering exceptional service and building long-term relationships with our valued customers.</p>
-						</div>
-						
-						<div style="margin-bottom: 1.5rem;">
-							<h4 style="margin-bottom: 0.5rem; color: #1a1a1a;">Strong Distribution Channel</h4>
-							<p>Extensive network coverage across Bangladesh ensuring timely delivery and support nationwide.</p>
-						</div>
-						
-						<div style="margin-bottom: 1.5rem;">
-							<h4 style="margin-bottom: 0.5rem; color: #1a1a1a;">Vendor Relationships</h4>
-							<p>Strategic partnerships with leading global technology manufacturers for competitive pricing and priority support.</p>
-						</div>
-						
-						<div style="margin-bottom: 1.5rem;">
-							<h4 style="margin-bottom: 0.5rem; color: #1a1a1a;">International Presence</h4>
-							<p>Connected to global technology trends and innovations through our international partnerships and certifications.</p>
-						</div>
-						
-						<div style="margin-bottom: 1.5rem;">
-							<h4 style="margin-bottom: 0.5rem; color: #1a1a1a;">Value-Added Services</h4>
-							<p>Beyond distribution, we offer implementation, training, and ongoing support services to maximize technology investments.</p>
-						</div>
-						
-						<div style="margin-bottom: 1.5rem;">
-							<h4 style="margin-bottom: 0.5rem; color: #1a1a1a;">Focus on Digital Transformation</h4>
-							<p>Helping businesses navigate their digital transformation journey with modern cloud and IT infrastructure solutions.</p>
-						</div>
-						
-						<div style="margin-bottom: 1.5rem;">
-							<h4 style="margin-bottom: 0.5rem; color: #1a1a1a;">Financial Stability</h4>
-							<p>Strong financial foundation ensuring consistent service delivery and long-term partnership reliability.</p>
-						</div>
-					</div>
+    <!-- Blog Content Section -->
+    <section class="blog-content">
+        <div class="container">
+            <div class="blog-grid">
+                <div class="blog-main fade-in-left">
+                    <img src="images/certificate.png" alt="Smart Technologies Strength" loading="lazy">
+                    
+                    <h2>The Strength of Smart Technologies</h2>
+                    <p>Discover what makes Smart Technologies (BD) Ltd a leader in the ICT distribution industry and why businesses across Bangladesh trust us with their technology needs.</p>
+                    
+                    <div>
+                        <h3>Our Key Strengths</h3>
+                        
+                        <div style="margin-bottom: var(--space-6);">
+                            <h4>Broad Product Portfolio</h4>
+                            <p>Representing over 100 world-renowned technology brands across various categories including hardware, software, and cloud solutions. Our diverse portfolio ensures we can meet any business requirement.</p>
+                        </div>
+                        
+                        <div style="margin-bottom: var(--space-6);">
+                            <h4>Expert Team</h4>
+                            <p>Our skilled professionals bring years of experience in technology consulting, implementation, and support services. We understand both global technology trends and local market needs.</p>
+                        </div>
+                        
+                        <div style="margin-bottom: var(--space-6);">
+                            <h4>Client Satisfaction</h4>
+                            <p>Committed to delivering exceptional service and building long-term relationships with our valued customers. Our success is measured by our clients' success.</p>
+                        </div>
+                        
+                        <div style="margin-bottom: var(--space-6);">
+                            <h4>Strong Distribution Channel</h4>
+                            <p>Extensive network coverage across Bangladesh ensuring timely delivery and support nationwide. Our logistics capabilities ensure efficient service delivery.</p>
+                        </div>
+                        
+                        <div style="margin-bottom: var(--space-6);">
+                            <h4>Vendor Relationships</h4>
+                            <p>Strategic partnerships with leading global technology manufacturers for competitive pricing and priority support. These relationships enable us to offer the best solutions.</p>
+                        </div>
+                        
+                        <div style="margin-bottom: var(--space-6);">
+                            <h4>International Presence</h4>
+                            <p>Connected to global technology trends and innovations through our international partnerships and certifications. We bring global expertise to the local market.</p>
+                        </div>
+                        
+                        <div style="margin-bottom: var(--space-6);">
+                            <h4>Value-Added Services</h4>
+                            <p>Beyond distribution, we offer implementation, training, and ongoing support services to maximize technology investments and ensure optimal performance.</p>
+                        </div>
+                        
+                        <div style="margin-bottom: var(--space-6);">
+                            <h4>Focus on Digital Transformation</h4>
+                            <p>Helping businesses navigate their digital transformation journey with modern cloud and IT infrastructure solutions that drive growth and efficiency.</p>
+                        </div>
+                        
+                        <div style="margin-bottom: var(--space-6);">
+                            <h4>Financial Stability</h4>
+                            <p>Strong financial foundation ensuring consistent service delivery and long-term partnership reliability. Our stability provides confidence to our partners.</p>
+                        </div>
+                    </div>
 
-					<!-- Comment section -->
-					<div class="comment-section">
-						<h3>Share Your Thoughts</h3>
-						<form class="comment-form">
-							<div class="form-group">
-								<input type="text" class="form-input" placeholder="Your Name" required>
-							</div>
-							<div class="form-group">
-								<input type="email" class="form-input" placeholder="Your Email" required>
-							</div>
-							<div class="form-group">
-								<textarea class="form-input form-textarea" placeholder="Your Comment" required></textarea>
-							</div>
-							<button type="submit" class="btn-secondary">Post Comment</button>
-						</form>
-					</div>
-				</div>
-				
-				<div class="blog-sidebar">
-					<div class="sidebar-header">Industry Focus</div>
-					<div class="sidebar-item">
-						<span>Global Automation</span>
-						<span>21</span>
-					</div>
-					<div class="sidebar-item">
-						<span>Smart Printing Solutions</span>
-						<span>29</span>
-					</div>
-					<div class="sidebar-item">
-						<span>Smart Academy</span>
-						<span>18</span>
-					</div>
-					<div class="sidebar-item">
-						<span>Fire & Safety Solutions</span>
-						<span>37</span>
-					</div>
-					<div class="sidebar-item">
-						<span>Smart Group</span>
-						<span>45</span>
-					</div>
-					<div class="sidebar-item">
-						<span>Smart Dairy</span>
-						<span>42</span>
-					</div>
-					<div class="sidebar-item">
-						<span>Smart Hi-Tech Park</span>
-						<span>23</span>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+                    <!-- Comment Section -->
+                    <div class="comment-section">
+                        <h3>Share Your Thoughts</h3>
+                        <form class="comment-form">
+                            <div class="form-group">
+                                <input type="text" class="form-input" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-input" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-input form-textarea" placeholder="Your Comment" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary">
+                                <i class="fas fa-paper-plane" style="margin-right: 8px;"></i>
+                                Post Comment
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="blog-sidebar fade-in-right">
+                    <div class="sidebar-header">
+                        <i class="fas fa-industry" style="margin-right: 8px;"></i>
+                        Industry Focus
+                    </div>
+                    <div class="sidebar-item">
+                        <span>Global Automation</span>
+                        <span class="badge">21</span>
+                    </div>
+                    <div class="sidebar-item">
+                        <span>Smart Printing Solutions</span>
+                        <span class="badge">29</span>
+                    </div>
+                    <div class="sidebar-item">
+                        <span>Smart Academy</span>
+                        <span class="badge">18</span>
+                    </div>
+                    <div class="sidebar-item">
+                        <span>Fire & Safety Solutions</span>
+                        <span class="badge">37</span>
+                    </div>
+                    <div class="sidebar-item">
+                        <span>Smart Group</span>
+                        <span class="badge">45</span>
+                    </div>
+                    <div class="sidebar-item">
+                        <span>Smart Dairy</span>
+                        <span class="badge">42</span>
+                    </div>
+                    <div class="sidebar-item">
+                        <span>Smart Hi-Tech Park</span>
+                        <span class="badge">23</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Footer -->
-	<section class="footer">
-		<div class="container">
-			<h4>Smart Technologies (BD) Ltd</h4>
-			<p>Your trusted partner in digital transformation. We provide cutting-edge technology solutions that empower businesses to achieve their goals and stay ahead in the digital age.</p>
-			
-			<div class="social-icons">
-				<a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
-				<a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
-				<a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
-				<a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
-			</div>
-			
-			<p class="footer-credit">Crafted with <i class="fa fa-heart" style="color: #ff4757;"></i> by <strong>Zahidul Sifat</strong></p>
-		</div>
-	</section>
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content fade-in-up">
+                <h2>Stay Updated with Latest Insights</h2>
+                <p>Subscribe to our newsletter and get the latest technology trends, industry insights, and company updates delivered to your inbox.</p>
+                <a href="Contact.html" class="cta-button">
+                    <i class="fas fa-envelope" style="margin-right: 8px;"></i>
+                    Subscribe Now
+                </a>
+            </div>
+        </div>
+    </section>
 
-	<!-- Mobile menu script -->
-	<script>
-		var navLinks = document.getElementById("navLinks");
-		
-		function showMenu() {
-			navLinks.style.right = "0";
-		}
-		
-		function hideMenu() {
-			navLinks.style.right = "-280px";
-		}
-		
-		// Close menu when clicking outside
-		document.addEventListener('click', function(event) {
-			if (!navLinks.contains(event.target) && !event.target.classList.contains('fa-bars')) {
-				hideMenu();
-			}
-		});
-		
-		// Close menu when pressing escape key
-		document.addEventListener('keydown', function(event) {
-			if (event.key === 'Escape') {
-				hideMenu();
-			}
-		});
-	</script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content fade-in-up">
+                <h4>Smart Technologies (BD) Ltd</h4>
+                <p>Your trusted partner in digital transformation. We provide cutting-edge technology solutions that empower businesses to achieve their goals and stay ahead in the digital age.</p>
+                
+                <div class="social-icons">
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                
+                <p class="footer-credit">
+                    Crafted with <i class="fas fa-heart" style="color: #667eea; margin: 0 4px;"></i> by <strong>Zahidul Sifat</strong>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Navigation scroll effect
+        const navbar = document.getElementById('navbar');
+        let lastScrollTop = 0;
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > 100) {
+                navbar.classList.add('nav-scrolled');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+
+        // Mobile menu functionality
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenuToggle.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on links
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuToggle.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+                mobileMenuToggle.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            }
+        });
+
+        // Close mobile menu on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                mobileMenuToggle.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.fade-in-up, .fade-in-left, .fade-in-right').forEach(el => {
+            el.style.animationPlayState = 'paused';
+            observer.observe(el);
+        });
+
+        // Comment form submission
+        document.querySelector('.comment-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your comment! We appreciate your feedback.');
+            this.reset();
+        });
+    </script>
 </body>
 </html>

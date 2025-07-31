@@ -1,154 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Contact Us - Smart Technologies (BD) Ltd</title>
-	<link rel="icon" type="image" href="images/fav.png">
-	<!-- Modern font -->
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-	<!-- Fallback font -->
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- Main stylesheet -->
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Smart Technologies (BD) Ltd</title>
+    <meta name="description" content="Get in touch with Smart Technologies (BD) Ltd. Contact us for technology solutions, support, and business inquiries.">
+    <link rel="icon" type="image/png" href="images/fav.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<!-- Header section -->
-	<section class="sub-header">
-		<!-- Navigation -->
-		<nav>
-			<a href="index.html"><img src="images/logo.png" alt="Smart Technologies Logo"></a>
-			<div class="nav-links" id="navLinks">
-				<i class="fa fa-times" onclick="hideMenu()"></i>
-				<ul>
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="About.html">ABOUT</a></li>
-					<li><a href="Products.html">PRODUCTS</a></li>
-					<li><a href="Blog.html">BLOG</a></li>
-					<li><a href="Contact.html">CONTACT</a></li>
-				</ul>
-			</div>
-			<i class="fa fa-bars" onclick="showMenu()"></i>
-		</nav>
-		
-		<h1>Contact Us</h1>
-	</section>
+    <!-- Header Section -->
+    <section class="sub-header">
+        <!-- Navigation -->
+        <nav id="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo-link">
+                    <img src="https://raw.githubusercontent.com/zahidulsifat/smartbd/main/images/STBL%20Logo.png" alt="STBL Logo" class="logo">
+                </a>
+                
+                <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="About.html" class="nav-link">About</a></li>
+                    <li><a href="Products.html" class="nav-link">Products</a></li>
+                    <li><a href="Blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="Contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <ul>
+                    <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+                    <li><a href="About.html" class="mobile-nav-link">About</a></li>
+                    <li><a href="Products.html" class="mobile-nav-link">Products</a></li>
+                    <li><a href="Blog.html" class="mobile-nav-link">Blog</a></li>
+                    <li><a href="Contact.html" class="mobile-nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <h1 class="fade-in-up">Contact Us</h1>
+    </section>
 
-	<!-- Location section -->
-	<section class="location">
-		<div class="container">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233667.86599869694!2d90.25446399931207!3d23.780863191512726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2z4Kai4Ka-4KaV4Ka-!5e0!3m2!1sbn!2sbd!4v1687194867216!5m2!1sbn!2sbd" 
-			loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-		</div>
-	</section>
+    <!-- Location Section -->
+    <section class="location">
+        <div class="container">
+            <div class="fade-in-up">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233667.86599869694!2d90.25446399931207!3d23.780863191512726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2z4Kai4Ka-4KaV4Ka-!5e0!3m2!1sbn!2sbd!4v1687194867216!5m2!1sbn!2sbd" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Smart Technologies Office Location">
+                </iframe>
+            </div>
+        </div>
+    </section>
 
-	<!-- Contact section -->
-	<section class="contact-us">
-		<div class="container">
-			<div class="contact-grid">
-				<div class="contact-info-section">
-					<h2 style="font-size: 2rem; margin-bottom: 2rem; color: #1a1a1a;">Get In Touch</h2>
-					
-					<div class="contact-info">
-						<i class="fa fa-map-marker"></i>
-						<div class="contact-details">
-							<h5>Our Office</h5>
-							<p>Jahir Smart Tower<br>205/1 & 205/1/A, West Kafrul<br>Begum Rokeya Sharani, Taltola<br>Dhaka-1207, Bangladesh</p>
-						</div>
-					</div>
-					
-					<div class="contact-info">
-						<i class="fa fa-phone"></i>
-						<div class="contact-details">
-							<h5>Phone Numbers</h5>
-							<p>+880-2-58153636<br>+880-2-55025235<br>Sunday to Thursday, 10AM to 6PM</p>
-						</div>
-					</div>
-					
-					<div class="contact-info">
-						<i class="fa fa-envelope"></i>
-						<div class="contact-details">
-							<h5>Email Address</h5>
-							<p>info@smartbd.com<br>Send us your inquiry anytime</p>
-						</div>
-					</div>
-				</div>
-				
-				<div class="contact-form">
-					<h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; color: #1a1a1a;">Send us a Message</h3>
-					<form action="form handelar.php" method="post">
-						<div class="form-group">
-							<input type="text" name="name" class="form-input" placeholder="Your Full Name" required>
-						</div>
-						<div class="form-group">
-							<input type="email" name="email" class="form-input" placeholder="Your Email Address" required>
-						</div>
-						<div class="form-group">
-							<input type="text" name="subject" class="form-input" placeholder="Subject" required>
-						</div>
-						<div class="form-group">
-							<textarea rows="6" name="message" class="form-input form-textarea" placeholder="Your Message" required></textarea>
-						</div>
-						<button type="submit" class="btn-secondary" style="width: 100%;">Send Message</button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>
+    <!-- Contact Section -->
+    <section class="contact-us">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info-section fade-in-left">
+                    <h2>Get In Touch</h2>
+                    
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-details">
+                            <h5>Our Office</h5>
+                            <p>Jahir Smart Tower<br>205/1 & 205/1/A, West Kafrul<br>Begum Rokeya Sharani, Taltola<br>Dhaka-1207, Bangladesh</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-details">
+                            <h5>Phone Numbers</h5>
+                            <p>+880-2-58153636<br>+880-2-55025235<br>Sunday to Thursday, 10AM to 6PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-details">
+                            <h5>Email Address</h5>
+                            <p>info@smartbd.com<br>Send us your inquiry anytime</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <i class="fas fa-clock"></i>
+                        <div class="contact-details">
+                            <h5>Business Hours</h5>
+                            <p>Sunday - Thursday: 10:00 AM - 6:00 PM<br>Friday - Saturday: Closed<br>Emergency support available 24/7</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form fade-in-right">
+                    <h3>Send us a Message</h3>
+                    <form action="form handelar.php" method="post" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-input" placeholder="Your Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-input" placeholder="Your Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" class="form-input" placeholder="Your Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" class="form-input" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="6" name="message" class="form-input form-textarea" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane" style="margin-right: 8px;"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Call to Action -->
-	<section class="cta">
-		<div class="container">
-			<h1>Ready to Start Your Project?</h1>
-			<p style="margin-bottom: 2rem; font-size: 1.1rem; opacity: 0.9;">Let's discuss how we can help transform your business with the right technology solutions.</p>
-			<a href="mailto:info@smartbd.com" class="hero-btn">Email Us Directly</a>
-		</div>
-	</section>
+    <!-- Quick Contact Section -->
+    <section class="solutions" style="background: white;">
+        <div class="container">
+            <div class="solutions-header fade-in-up">
+                <h2>Quick Contact Options</h2>
+                <p>Choose the best way to reach us based on your needs</p>
+            </div>
+            
+            <div class="solutions-grid">
+                <div class="solution-card fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="solution-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Technical Support</h3>
+                    <p>Get immediate technical assistance for your IT infrastructure and technology solutions.</p>
+                    <a href="tel:+8802581536360" class="btn-secondary" style="margin-top: var(--space-4);">
+                        <i class="fas fa-phone" style="margin-right: 8px;"></i>
+                        Call Support
+                    </a>
+                </div>
+                
+                <div class="solution-card fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="solution-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Sales Inquiries</h3>
+                    <p>Discuss your technology requirements and get customized solutions for your business.</p>
+                    <a href="mailto:sales@smartbd.com" class="btn-secondary" style="margin-top: var(--space-4);">
+                        <i class="fas fa-envelope" style="margin-right: 8px;"></i>
+                        Email Sales
+                    </a>
+                </div>
+                
+                <div class="solution-card fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="solution-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Schedule Meeting</h3>
+                    <p>Book a consultation with our experts to discuss your technology needs in detail.</p>
+                    <a href="Contact.html" class="btn-secondary" style="margin-top: var(--space-4);">
+                        <i class="fas fa-calendar" style="margin-right: 8px;"></i>
+                        Book Meeting
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Footer -->
-	<section class="footer">
-		<div class="container">
-			<h4>Smart Technologies (BD) Ltd</h4>
-			<p>Your trusted partner in digital transformation. We provide cutting-edge technology solutions that empower businesses to achieve their goals and stay ahead in the digital age.</p>
-			
-			<div class="social-icons">
-				<a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
-				<a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
-				<a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
-				<a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
-			</div>
-			
-			<p class="footer-credit">Crafted with <i class="fa fa-heart" style="color: #ff4757;"></i> by <strong>Zahidul Sifat</strong></p>
-		</div>
-	</section>
+    <!-- Call to Action Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content fade-in-up">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Let's discuss how we can help transform your business with the right technology solutions. Our experts are ready to assist you.</p>
+                <div style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap; margin-top: var(--space-6);">
+                    <a href="mailto:info@smartbd.com" class="cta-button">
+                        <i class="fas fa-envelope" style="margin-right: 8px;"></i>
+                        Email Us Directly
+                    </a>
+                    <a href="tel:+8802581536360" class="btn-secondary">
+                        <i class="fas fa-phone" style="margin-right: 8px;"></i>
+                        Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- Mobile menu script -->
-	<script>
-		var navLinks = document.getElementById("navLinks");
-		
-		function showMenu() {
-			navLinks.style.right = "0";
-		}
-		
-		function hideMenu() {
-			navLinks.style.right = "-280px";
-		}
-		
-		// Close menu when clicking outside
-		document.addEventListener('click', function(event) {
-			if (!navLinks.contains(event.target) && !event.target.classList.contains('fa-bars')) {
-				hideMenu();
-			}
-		});
-		
-		// Close menu when pressing escape key
-		document.addEventListener('keydown', function(event) {
-			if (event.key === 'Escape') {
-				hideMenu();
-			}
-		});
-	</script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content fade-in-up">
+                <h4>Smart Technologies (BD) Ltd</h4>
+                <p>Your trusted partner in digital transformation. We provide cutting-edge technology solutions that empower businesses to achieve their goals and stay ahead in the digital age.</p>
+                
+                <div class="social-icons">
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                
+                <p class="footer-credit">
+                    Crafted with <i class="fas fa-heart" style="color: #667eea; margin: 0 4px;"></i> by <strong>Zahidul Sifat</strong>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Navigation scroll effect
+        const navbar = document.getElementById('navbar');
+        let lastScrollTop = 0;
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > 100) {
+                navbar.classList.add('nav-scrolled');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+
+        // Mobile menu functionality
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenuToggle.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on links
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuToggle.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !mobileMenuToggle.contains(e.target)) {
+                mobileMenuToggle.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            }
+        });
+
+        // Close mobile menu on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                mobileMenuToggle.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.fade-in-up, .fade-in-left, .fade-in-right').forEach(el => {
+            el.style.animationPlayState = 'paused';
+            observer.observe(el);
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simple form validation
+            const name = this.name.value.trim();
+            const email = this.email.value.trim();
+            const subject = this.subject.value.trim();
+            const message = this.message.value.trim();
+            
+            if (!name || !email || !subject || !message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // You can submit to your PHP handler here
+            // For demo purposes, we'll show a success message
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
 </body>
 </html>
