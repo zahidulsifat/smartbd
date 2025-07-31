@@ -239,7 +239,6 @@ nav {
     background: var(--nav-bg-scrolled);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--border-primary);
-    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
     contain: layout style;
     will-change: transform;
 }
@@ -250,7 +249,7 @@ nav {
     justify-content: space-between;
     width: 100%;
     margin: 0;
-    padding: 0 clamp(10px, 3vw, 20px);
+    padding: 0 20px;
 }
 
 .nav-right {
@@ -762,6 +761,80 @@ nav {
 }
 
 /* Responsive Design */
+@media (max-width: 640px) {
+    /* Apply mobile font sizes for desktop mode */
+    body {
+        font-size: 0.75rem; /* 12px */
+    }
+
+    h1 { font-size: 1.25rem; } /* 20px */
+    h2 { font-size: 1.125rem; } /* 18px */
+    h3 { font-size: 0.875rem; } /* 14px */
+    h4 { font-size: 0.75rem; } /* 12px */
+    h5 { font-size: 0.7rem; } /* 11.2px */
+    h6 { font-size: 0.65rem; } /* 10.4px */
+
+    p {
+        font-size: 0.75rem; /* 12px */
+    }
+
+    .banner-text h1 {
+        font-size: 1.25rem; /* 20px */
+    }
+
+    .banner-text p {
+        font-size: 0.75rem; /* 12px */
+    }
+
+    .solution-card h3 {
+        font-size: 0.875rem; /* 14px */
+    }
+
+    .solution-card p {
+        font-size: 0.7rem; /* 11.2px */
+    }
+
+    .nav-links a {
+        font-size: 0.7rem; /* 11.2px */
+    }
+
+    .solutions-header h2 {
+        font-size: 1.125rem; /* 18px */
+    }
+
+    .solutions-header p {
+        font-size: 0.75rem; /* 12px */
+    }
+
+    .cta-content h2 {
+        font-size: 1.125rem; /* 18px */
+    }
+
+    .cta-content p {
+        font-size: 0.75rem; /* 12px */
+    }
+
+    .footer-content h4 {
+        font-size: 1rem; /* 16px */
+    }
+
+    .footer-content p {
+        font-size: 0.75rem; /* 12px */
+    }
+
+    .btn-primary {
+        font-size: 0.7rem; /* 11.2px */
+    }
+
+    .btn-secondary {
+        font-size: 0.7rem; /* 11.2px */
+    }
+
+    .cta-button {
+        font-size: 0.7rem; /* 11.2px */
+    }
+}
+
 @media (max-width: 480px) {
     nav {
         margin: 0;
